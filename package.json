@@ -1,0 +1,15 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mainak Dhar",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "yargs": "^8.0.2"
+  }
+}
