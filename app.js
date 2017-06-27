@@ -12,7 +12,13 @@ console.log('command: ', command);
 console.log('Yargs: ', argv);
 
 if (command === 'add') {
-    notes.addNote(argv.title, argv.body);
+    var note = notes.addNote(argv.title, argv.body);
+    if (note) {
+            console.log('Added note titled', note.title);
+        } else {
+            console.log('The title ', argv.title, ' exists in the file');
+        }
+
 } else if (command === 'list') {
     notes.getAll();
 } else if (command === 'read') {
